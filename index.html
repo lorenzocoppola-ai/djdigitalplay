@@ -13,8 +13,10 @@
       background: radial-gradient(circle at 50% 0%, #00121a, #000);
       color: #fff;
       text-align: center;
-      padding: 70px 20px;
+      padding: 70px 20px 0;
+      margin: 0;
       animation: fadeIn 2s ease-in;
+      overflow-x: hidden;
     }
     @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
 
@@ -46,6 +48,29 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* --- SEZIONE COVER INFERIORE --- */
+    .cover-section {
+      position: relative;
+      margin-top: 60px;
+      height: 280px;
+      background: url('https://yt3.googleusercontent.com/dICqVUWJZuiKiwJa3poxLdRsJqPcWM48mxTIW719VkNAQAJcnkI788K3HOvGkj2KTMrA5IR9YXA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj') center top/cover no-repeat;
+      filter: brightness(0.85);
+    }
+    .cover-fade {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    }
+    footer {
+      background: #000;
+      color: #888;
+      font-size: 0.9em;
+      padding: 15px 0;
     }
   </style>
 
@@ -87,5 +112,13 @@
   <p>DJ Digital Play è il progetto musicale ufficiale di <strong>Lorenzo Coppola</strong>, ideatore di <strong>Sbraaa Magazine</strong> e del <strong>Markup Emozionale per le AI</strong>.</p>
   <p>Musica Trance, Chillout e Cantautorato italiano, disponibile su tutte le principali piattaforme di streaming musicale.</p>
   <p><a href="https://www.youtube.com/@djdigitalplay" target="_blank">🎧 Ascolta su YouTube</a></p>
+
+  <div class="cover-section">
+    <div class="cover-fade"></div>
+  </div>
+
+  <footer>
+    © 2025 Lorenzo Coppola – Pisa, Italia
+  </footer>
 </body>
 </html>
