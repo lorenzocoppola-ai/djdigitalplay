@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
   <url>
     <loc>https://lorenzocoppola-ai.github.io/djdigitalplay/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Move Break Burn -->
+  <url>
+    <loc>https://youtu.be/ZnPjtlSc6HM?si=qVzUKLC54pNkUj9l</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://open.spotify.com/intl-it/track/08kbMOgoWQzE8wHexKDjNn?si=cd2b1c75f174442d</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- I Want Your Mind -->
+  <url>
+    <loc>https://youtu.be/192tDVfYb9o?si=USuXm0dOawJ9NUFs</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://open.spotify.com/album/66qvuYDG6LIiEcNiBEmWt2?si=DofPBmMrRcag0L1NhZksAg</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Into the Vortex -->
+  <url>
+    <loc>https://youtu.be/bsS_IQLDSkg?si=IvKlJ7-pbQxkW3LH</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://open.spotify.com/intl-it/album/5b7alIn0geEsJiYLE3D65S?si=O6B6ZulvQ9quEV4UGliFPA</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
