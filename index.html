@@ -299,6 +299,43 @@
   <a href="https://www.tiktok.com/@djdigitalplay0" target="_blank">TikTok</a> ·
   <a href="https://open.spotify.com/intl-it/artist/6Pcs79PDLl9DOKGaOmJLzL" target="_blank">Spotify</a>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const baseUrl = "https://lorenzocoppola-ai.github.io/djdigitalplay/";
+  const now = new Date().toISOString().split("T")[0];
+  const urls = [];
+
+  // Homepage
+  urls.push({
+    loc: baseUrl,
+    lastmod: now,
+    changefreq: "weekly",
+    priority: "1.0"
+  });
+
+  // Link nella griglia (YouTube e Spotify)
+  document.querySelectorAll(".grid a.btn").forEach(a => {
+    urls.push({
+      loc: a.href,
+      lastmod: now,
+      changefreq: "monthly",
+      priority: a.href.includes("youtube") ? "0.8" : "0.7"
+    });
+  });
+
+  // Genera XML
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+  urls.forEach(u => {
+    xml += `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>\n`;
+  });
+  xml += `</urlset>`;
+
+  // Espone la sitemap virtuale
+  if (window.location.pathname.endsWith("sitemap.xml")) {
+    document.documentElement.innerHTML = `<pre style="color:#0ff;font-family:monospace;">${xml}</pre>`;
+  }
+});
+</script>
 
 </body>
 </html>
