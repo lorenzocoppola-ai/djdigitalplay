@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lorenzocoppola-ai.github.io/djdigitalplay/sitemap.xml
