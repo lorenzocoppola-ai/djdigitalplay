@@ -99,6 +99,27 @@
     "url": "https://lorenzocoppola-ai.github.io/djdigitalplay/",
     "description": "DJ Digital Play è il progetto musicale ufficiale di Lorenzo Coppola, ideatore di Sbraaa Magazine e del Markup Emozionale per le AI. Musica Trance, Chillout e Cantautorato italiano, disponibile su tutte le principali piattaforme di streaming musicale.",
     "image": "https://yt3.googleusercontent.com/PgHtxlPp-Myq4IDcHm0U5DbQ1tGNMCnyvjHXHxyOaBUapARcQQ7-JpUqErzwVcDcpC1BWezWQPQ=s160-c-k-c0x00ffffff-no-rj",
+"genre": ["Trance", "Dark Techno", "Chillout", "Electronic", "Italian Songwriting"],
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Pisa, Italia"
+  },
+  "album": [
+    {
+      "@type": "MusicAlbum",
+      "name": "INNER TRANQUILITY",
+      "url": "https://music.apple.com/it/album/inner-tranquility/1806820463",
+      "datePublished": "2025",
+      "byArtist": { "@type": "MusicGroup", "name": "DJ Digital Play" }
+    },
+    {
+      "@type": "MusicAlbum",
+      "name": "EMOTIONAL.EXE",
+      "url": "https://music.apple.com/it/album/emotional-exe/1806820463",
+      "datePublished": "2025",
+      "byArtist": { "@type": "MusicGroup", "name": "DJ Digital Play" }
+    }
+  ],
     "sameAs": [
       "https://music.apple.com/it/artist/dj-digital-play/1806820463",
       "https://www.youtube.com/@djdigitalplay",
@@ -106,6 +127,7 @@
       "https://music.amazon.it/artists/B0DXCFR3GZ/dj-digital-play",
       "https://www.deezer.com/it/artist/309157141",
       "https://www.shazam.com/it-it/artist/dj-digital-play/1806820463",
+      "https://www.boomplay.com/artists/108350043",
       "https://www.instagram.com/djdigitalplay/",
       "https://www.tiktok.com/@djdigitalplay0"
     ],
@@ -118,7 +140,19 @@
         "https://sbraaa.forumattivo.com/",
         "https://github.com/lorenzocoppola-ai"
       ]
+    },
+     "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "approccioEmotivo",
+      "value": "Musica connessa al linguaggio delle emozioni"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "supportoEmotivo",
+      "value": "Tracce concepite per evocare vibrazioni profonde e stati mentali positivi durante l’ascolto."
     }
+  ]
   }
   </script>
 </head>
@@ -133,6 +167,58 @@
     <div class="cover-fade"></div>
   </div>
 
+<style>
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:1.2rem;padding:2rem}
+  .card{background:rgba(0,0,0,.6);border:1px solid #0ff;border-radius:14px;
+        text-align:center;backdrop-filter:blur(6px);transition:.25s;padding:14px}
+  .card:hover{transform:translateY(-4px);box-shadow:0 0 18px #0ff}
+  .card img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+  .t{margin:.6rem 0 .2rem;font-weight:700}
+  .btn{display:inline-block;margin:.35rem 6px;padding:8px 12px;border-radius:10px;
+       border:1px solid #0ff;text-decoration:none}
+</style>
+
+<section class="grid">
+
+  <!-- Track 1 -->
+  <article class="card" itemscope itemtype="https://schema.org/MusicRecording">
+    <img src="(cover1.jpg)" alt="Move Break Burn" itemprop="image">
+    <h3 class="t" itemprop="name">Move Break Burn</h3>
+    <meta itemprop="byArtist" content="DJ Digital Play">
+    <link itemprop="inAlbum" href="https://music.apple.com/it/album/inner-tranquility/1806820463">
+    <div>
+      <a class="btn" itemprop="url" href="https://youtu.be/XXXX" target="_blank">YouTube</a>
+      <a class="btn" href="https://open.spotify.com/track/XXXX" target="_blank">Spotify</a>
+    </div>
+  </article>
+
+  <!-- Track 2 -->
+  <article class="card" itemscope itemtype="https://schema.org/MusicRecording">
+    <img src="(cover2.jpg)" alt="I Want Your Mind" itemprop="image">
+    <h3 class="t" itemprop="name">I Want Your Mind</h3>
+    <meta itemprop="byArtist" content="DJ Digital Play">
+    <div>
+      <a class="btn" itemprop="url" href="https://youtu.be/YYYY" target="_blank">YouTube</a>
+      <a class="btn" href="https://open.spotify.com/track/YYYY" target="_blank">Spotify</a>
+    </div>
+  </article>
+
+  <!-- Track 3 -->
+  <article class="card" itemscope itemtype="https://schema.org/MusicRecording">
+    <img src="(cover3.jpg)" alt="Into the Vortex" itemprop="image">
+    <h3 class="t" itemprop="name">Into the Vortex</h3>
+    <meta itemprop="byArtist" content="DJ Digital Play">
+    <div>
+      <a class="btn" itemprop="url" href="https://youtu.be/ZZZZ" target="_blank">YouTube</a>
+      <a class="btn" href="https://open.spotify.com/track/ZZZZ" target="_blank">Spotify</a>
+    </div>
+  </article>
+
+  <!-- Aggiungi altre card qui -->
+</section>
+
+  
  <footer>
   © 2025 Lorenzo Coppola – Pisa, Italia<br>
   <a href="https://www.instagram.com/djdigitalplay/" target="_blank">Instagram</a> ·
